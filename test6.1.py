@@ -9,9 +9,9 @@ def printTable(myData):
     for width in range(len(myData)):
         maxWidth = 0
         
-        for lonS in range(1,len(myData[width])):
-            if len(myData[width][lonS]) > len(myData[width][maxWidth]):
-                maxWidth = lonS
+        for i in range(1,len(myData[width])):
+            if len(myData[width][i]) > len(myData[width][maxWidth]):
+                maxWidth = i
             
         colWidth[width] = len(myData[width][maxWidth])
        
